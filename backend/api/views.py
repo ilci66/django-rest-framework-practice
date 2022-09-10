@@ -16,6 +16,6 @@ def api_home(request, *args, **kwargs):
     if instance:
         # data = model_to_dict(instance, fields=['id', 'title', 'price', 'sale_price'])
     
-    # print("data => ", data)
+    # print("data => ",  data)
         data = ProductSerializer(instance).data
     return Response(data) 
